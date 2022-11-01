@@ -36,8 +36,10 @@
 
   <div class="container">
     <div>
-      <img class="img-mobile" src="./images/image-product-mobile.jpg" alt="">
-      <img class="img-desktop" src="./images/image-product-desktop.jpg" alt="">
+      <picture>
+        <source media="(max-width: 768px)" srcset="./images/image-product-mobile.jpg">
+        <img class="perfume-picture" src="./images/image-product-desktop.jpg" alt="A chanel perfum">
+      </picture>
     </div>
     <div class="container-container">
       <div class="container-produto">
@@ -52,15 +54,17 @@
       <div class="container-compra">
         <div class="precos">
           <p class="preco-promo">$149.99</p>
-          <p class="preco">$169.99</p>
+          <del class="preco">
+            <span class="sr-only">Old price:</span>$169.99
+          </del>
         </div>
-        <button class="botao"><img src="./images/icon-cart.svg" alt="">Add to Cart</button>
+        <button class="botao"><img src="./images/icon-cart.svg" alt="A shop cart image">Add to Cart</button>
       </div>
     </div>
   </div>
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="https://github.com/Inkekk">Kine</a>.
   </div>
 </body>
 
